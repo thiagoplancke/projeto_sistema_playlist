@@ -55,10 +55,7 @@ Operações principais:
 📁 sistema-playlist/
 │
 ├── musica.py
-├── nodo_lista.py
-├── biblioteca.py
-├── nodo_fila.py
-├── fila.py
+├── estrutura.py
 ├── main.py
 └── README.md
 ```
