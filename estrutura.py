@@ -138,6 +138,9 @@ class Fila:
             )
 
             atual = atual.prox
+    def limpar(self):
+        self.inicio = None
+        self.fim = None
 
     def tamanho(self):
         atual = self.inicio
