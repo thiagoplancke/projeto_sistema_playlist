@@ -41,6 +41,43 @@ def montar_filas():
         atual = atual.prox
 
 
+def carregar_musicas_padrao():
+    global proximo_id
+
+    musicas = [
+        ("Blinding Lights", "The Weeknd", "Pop", 171),
+        ("Lose Yourself", "Eminem", "Rap", 171),
+        ("Perfect", "Ed Sheeran", "Pop", 95),
+        ("Believer", "Imagine Dragons", "Rock", 125),
+        ("Shape of You", "Ed Sheeran", "Pop", 96),
+        ("Thunder", "Imagine Dragons", "Rock", 168),
+        ("Stay", "Justin Bieber", "Pop", 120),
+        ("Numb", "Linkin Park", "Rock", 110),
+        ("Heat Waves", "Glass Animals", "Indie", 80),
+        ("Industry Baby", "Lil Nas X", "Rap", 150),
+    ]
+
+    for titulo, artista, genero, bpm in musicas:
+
+        musica = Musica(
+            proximo_id,
+            titulo,
+            artista,
+            genero,
+            bpm
+        )
+
+        biblioteca.adicionar_musica(musica)
+
+        proximo_id += 1
+
+    print("Músicas padrão carregadas.")
+
+
+carregar_musicas_padrao()
+
+
+
 while True:
 
     print("\n===== SISTEMA PLAYLIST =====")
